@@ -96,7 +96,7 @@ python extract_checked_panels.py --clean clean.png --rows 2 --cols 3 --manual "1
 
 标记应是亮青色，例如 RGB `0,200,255`，尽量画在格子内部。脚本通过颜色和图像差异识别新增笔迹；它不会判断对钩形状，青色文字或跨格标记也可能被选中。检测不准时可改用手动行列。
 
-两张图片需要位置一致。等比例缩放可以处理；平移、旋转、裁切或透视变化需要先对齐。不等宽的拼贴布局应使用明确的裁切坐标。
+两张图片需要位置一致。等比例缩放可以处理；平移、旋转、裁切或透视变化需要先对齐。脚本不支持不等宽、不等高的拼贴布局；这类图片需要先测量区域，再使用其他裁切工具处理。
 
 旧版默认中心裁切和自动去白边；要保留旧处理方式，添加 `--square-mode crop --trim-white`。
 
@@ -108,7 +108,7 @@ python extract_checked_panels.py --clean clean.png --rows 2 --cols 3 --manual "1
 python -m unittest discover -s tests -v
 ```
 
-代码与文档采用 [MIT License](LICENSE)。图库中的 AI 作品及摄影来源见 [素材说明](examples/GALLERY.md#素材说明)。
+代码与文档采用 [MIT License](LICENSE)。图库中的 AI 作品及摄影原片用于项目展示，其复用许可尚未单独声明；素材来源见 [素材说明](examples/GALLERY.md#素材说明)。
 
 ---
 

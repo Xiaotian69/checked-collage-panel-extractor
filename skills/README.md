@@ -58,7 +58,7 @@
 
 摄影与作品由 [Xiaotian69](https://github.com/Xiaotian69) 提供。图库展示的是已有 AI 拼贴作品；创作指南是对其视觉方法的整理。拆图脚本使用本地裁切，不调用图像生成。
 
-代码与文档采用 MIT 许可。图片格式、摄影参考关系与来源记录见 [图库说明](checked-collage-panel-extractor/examples/GALLERY.md#素材说明)。
+代码与文档采用 MIT 许可。摄影原片与 AI 作品用于项目展示，其复用许可尚未单独声明；图片格式、摄影参考关系与来源记录见 [图库说明](checked-collage-panel-extractor/examples/GALLERY.md#素材说明)。
 
 ---
 

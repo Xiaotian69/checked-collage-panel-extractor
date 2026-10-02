@@ -68,7 +68,7 @@
 
 [作品集](../checked-collage-panel-extractor/examples/GALLERY.md) 收录 11 张已有 AI 拼贴与 7 张摄影参考。设计指南中的提示词是根据作品风格整理的模板，原始生成提示词未留存。
 
-代码与文档采用 [MIT License](LICENSE)。
+代码与文档采用 [MIT License](LICENSE)。仓库中的摄影原片与 AI 作品用于项目展示，其复用许可尚未单独声明。
 
 ---
 

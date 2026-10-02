@@ -1,0 +1,36 @@
+name: 功能建议
+description: 提出新的工作流、参数或文档改进建议
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解决的问题
+      description: 请先描述实际使用场景，而不只是功能名称。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 说明你希望如何使用，以及理想输入和输出。
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: 相关组件
+      options:
+        - PanelPick 拆图脚本
+        - PanelPick Agent Skill
+        - Stoneframe Agent Skill
+        - 作品集或文档
+        - 仓库基础设施
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 已尝试的替代方案
+      description: 可选。说明目前如何绕过这个问题。

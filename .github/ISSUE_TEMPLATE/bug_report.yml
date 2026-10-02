@@ -1,0 +1,52 @@
+name: Bug 报告
+description: 报告可复现的误选、漏选、报错或文档问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请不要上传含有隐私、未授权人物或无权公开传播的原始照片；可以使用裁剪、打码或自行构造的最小样例。
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 简要说明发生了什么，以及你原本希望得到什么结果。
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: 运行命令
+      description: 请粘贴完整命令，并移除本机隐私路径。
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      description: 例如 Windows 11 / Python 3.12。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 实际结果与错误输出
+      description: 可附 `selection_report.json` 中与问题有关的内容。
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: 最小复现样例
+      description: 可选。请只提供已脱敏且允许公开的图片或复现步骤。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已阅读 README 的已知限制与 FAQ。
+          required: true
+        - label: 我确认公开内容不包含不应披露的个人或版权素材。
+          required: true
