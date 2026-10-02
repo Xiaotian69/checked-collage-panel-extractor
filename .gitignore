@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+/skills/checked-collage-panel-extractor/demo-output/
+/skills/checked-collage-panel-extractor/selected/
+/skills/checked-collage-panel-extractor/manual-output/
