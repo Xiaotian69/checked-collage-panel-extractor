@@ -1,0 +1,9 @@
+[
+  {
+    "marked": "demo-marked.png",
+    "clean": "demo-clean.png",
+    "rows": 2,
+    "cols": 3,
+    "prefix": "demo"
+  }
+]
