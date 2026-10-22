@@ -12,13 +12,25 @@
 
 </div>
 
-![11 张大同摄影拼贴作品](skills/checked-collage-panel-extractor/examples/gallery-contact.jpg)
+> PanelPick detects cyan check marks on a marked contact sheet and exports the matching cells, pixel-exact, from the clean sheet. Local CLI + Agent Skill, no image generation or API key.
+
+| ① 带勾选标记的联系表 | ② 无标记的干净原图 | ③ 输出 |
+| --- | --- | --- |
+| ![带青色勾选标记的示例联系表](skills/checked-collage-panel-extractor/examples/demo-marked.png) | ![无标记的示例联系表](skills/checked-collage-panel-extractor/examples/demo-clean.png) | 选中格子从②中裁出，导出为独立 PNG + `selection_report.json` + 可选 ZIP |
+
+<sub>示例图来自仓库 `examples/`，可用下方「运行仓库示例」命令复现。</sub>
 
 一张联系表里有很多小图，但你只想保留其中几张。PanelPick 对照“带青色标记版”和“无标记版”，定位选中的规则网格，再从无标记版中裁出原始像素，输出独立 PNG、选择报告和可选 ZIP。
 
 这个仓库源于一次摄影拼贴选片实践：直接从带勾图片裁切会把标记一起留下，重新生成又会改变已经满意的作品。项目因此把“选择位置”和“提供最终像素”分开，尽量让拆图过程可核对、可重复，也不依赖图像生成服务。
 
 仓库还包含配套的 [Stoneframe · 石间拼贴](skills/heritage-photo-collage/) Skill，用于从石窟、古建和壁画摄影中整理选片、构图、配色与参考图编辑提示词。它与拆图脚本相互独立，可按需单独使用。
+
+## 项目起源：石间作品集
+
+项目起源于一次大同摄影拼贴的选片实践。下图是这组 11 张 AI 拼贴作品的联系表（与摄影原片的逐张对照见[作品集](skills/checked-collage-panel-extractor/examples/GALLERY.md)）：
+
+![11 张大同摄影拼贴作品](skills/checked-collage-panel-extractor/examples/gallery-contact.jpg)
 
 ## 项目组成
 
